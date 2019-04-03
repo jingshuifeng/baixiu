@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>javascript &middot; MUI</title>
+<meta name="description" content="MUI: 最接近原生APP体验的高性能前端框架">
+<meta name="keywords" content="MUI,框架,官网，JS, JavaScript, framework,css,css3,开源,html,html5,前端框架,api,文档,开发,教程,hbuilder,hybrid,native,webview">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+<link rel="shortcut icon" href="http://dev.dcloud.net.cn/mui/favicon.ico">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+<link rel="stylesheet" href="../dist/css/bootstrap.min.css" tppabs="http://dev.dcloud.net.cn/mui/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="../dist/css/mui.min.css-v=2016-08-07 19-43-10 -0700.css" tppabs="http://dev.dcloud.net.cn/mui/dist/css/mui.min.css?v=2016-08-07 19:43:10 -0700">
+<link rel="stylesheet" href="../assets/css/docs.css-v=2016-08-07 19-43-10 -0700.css" tppabs="http://dev.dcloud.net.cn/mui/assets/css/docs.css?v=2016-08-07 19:43:10 -0700">
+
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://dev.dcloud.net.cn/mui/assets/img/apple-touch-icon-114x114.png">
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "../../../hm.baidu.com/hm.js-2b98e9d77bf9772982afa81412cfb9c5.js"/*tpa=http://hm.baidu.com/hm.js?2b98e9d77bf9772982afa81412cfb9c5*/;
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+  </head>
+  <body ontouchstart="">
+    <!--[if lt IE 9]>
+  <div class="bs-callout bs-callout-danger">
+    <h4>Attention!</h4>
+    <p>
+      Looks like your current browser is old and doesn't support many features used in this page.
+      Please take a second to <a href="javascript:if(confirm(%27http://browsehappy.com/  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://browsehappy.com/%27" tppabs="http://browsehappy.com/">upgrade to a more modern browser</a>.
+    </p>
+  </div>
+<![endif]-->
+
+    <link rel="stylesheet" href="../dist/css/mui-icons-extra.css-v=2016-08-07 19-43-10 -0700.css" tppabs="http://dev.dcloud.net.cn/mui/dist/css/mui-icons-extra.css?v=2016-08-07 19:43:10 -0700">
+<div class="docs-sub-header">
+	<header class="docs-masthead mui-clearfix">
+  <div class="container">
+    <div class="column" style="width:100%">
+      <h1 class="docs-title">
+        <a href="../index.htm" tppabs="http://dev.dcloud.net.cn/mui/" >MUI</a>
+      </h1>
+      <nav class="docs-nav mui-clearfix">
+        <a class="docs-nav-trigger mui-icon mui-icon-bars mui-pull-right js-docs-nav-trigger" href="#"></a>
+        <div class="docs-nav-group">
+          <a class="docs-nav-item" href="../index.htm" tppabs="http://dev.dcloud.net.cn/mui/" >首页</a>
+          <a class="docs-nav-item" href="../getting-started/index.htm" tppabs="http://dev.dcloud.net.cn/mui/getting-started" >新手指南</a>
+          <a class="docs-nav-item" href="../ui/index.htm" tppabs="http://dev.dcloud.net.cn/mui/ui" >文档</a>
+          <a class="docs-nav-item" href="javascript:if(confirm(%27http://ask.dcloud.net.cn/explore/category-3  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://ask.dcloud.net.cn/explore/category-3%27" tppabs="http://ask.dcloud.net.cn/explore/category-3" >问答社区</a>
+          <a class="docs-nav-item" href="javascript:if(confirm(%27https://github.com/dcloudio/mui  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27https://github.com/dcloudio/mui%27" tppabs="https://github.com/dcloudio/mui" >GitHub地址</a>
+          <a class="docs-nav-item" href="javascript:if(confirm(%27http://dev.dcloud.net.cn/sponsor/?channel=mui  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://dev.dcloud.net.cn/sponsor/?channel=mui%27" tppabs="http://dev.dcloud.net.cn/sponsor/?channel=mui" target="_blank">支持我们</a>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+
+	<div class="container">
+		<div class="docs-sub-content">
+			<h2 class="page-title">Mui 扩展字体图标</h2>
+		</div>
+	</div>
+	<!-- 暂时注释，回头也需要快速跳转 -->
+	<!-- <div class="docs-component-toolbar js-docs-component-toolbar">
+  <div class="container">
+    <div class="column units-2">
+      <span class="docs-jump-menu mui-pull-left js-jump-menu">
+  <span class="mui-icon mui-icon-list"></span>
+  跳转至
+  <span class="mui-icon mui-icon-caret"></span>
+</span>
+
+<div class="docs-component-group js-component-group">
+  <a class="docs-component-item" href="#bars">Bars</a>
+  <a class="docs-component-item" href="#typography">Typography</a>
+  <a class="docs-component-item" href="#tableviews">Table views</a>
+  <a class="docs-component-item" href="#buttons">Buttons</a>
+  <a class="docs-component-item" href="#segmentedControls">Segmented controls</a>
+  <a class="docs-component-item" href="#badges">Badges</a>
+  <a class="docs-component-item" href="#toggles">Switches</a>
+  <a class="docs-component-item" href="#popovers">Popovers</a>
+  <a class="docs-component-item" href="#sliders">Sliders</a>
+  <a class="docs-component-item" href="#muiicons">Muiicons</a>
+</div>
+
+    </div>
+  </div>
+</div>
+ -->
+</div>
+
+<div class="container">
+	<style>
+	#iconlist:before{
+		height: 0;
+	}
+	#iconlist:after{
+		height: 0
+	}
+	#iconlist li.mui-table-view-cell{
+		padding: 15px;
+		border: 1px solid #fff;
+		background-color:#f9f9f9; 
+		cursor: pointer;
+	}
+	#iconlist .mui-table-view-cell:hover:after{
+		height: 4px;
+		background-color:#d64c28;
+		left:0;
+	}
+
+	#iconlist li.mui-table-view-cell .mui-media-body{
+		word-wrap:break-word;
+		height: 30px;
+	}
+
+</style>
+	<!-- Components -->
+	<div class="docs-components"><br />
+		 <div id="faq_popGesture" class="comment comment-faq">
+		<h4 class="component-description">MUI 核心库提供了一些常用的icon,同时在核心库基础上扩展了以下使用频率较高的icon(<sub>点击icon图标可复制相应类名哦</sub>)</h4>
+  </div>
+  <div class="mui-content-padded column-group">
+  	  <!--<div class="column col-xs-9" style="float: none;margin: 0 auto;">-->
+		<ul id="iconlist" class="mui-table-view mui-grid-view">
+		
+			<li class="mui-table-view-cell mui-col-xs-3 mui-col-sm-2" data-clip="mui-icon-extra mui-icon-extra-calc">
+				<span class="mui-icon-extra mui-icon-extra-calc"></span>	
+				<div class="mui-media-body">mui-icon-extra-calc</div>
+			</li>
+		
+			<li class="mui-table-view-cell mui-col-xs-3 mui-col-sm-2" data-clip="mui-icon-extra mui-icon-extra-new">
+				<span class="mui-icon-extra mui-icon-extra-new"></span>	
+				<div class="mui-media-body">mui-icon-extra-new</div>
+			</li>
+		
+			<li class="mui-table-view-cell mui-col-xs-3 mui-col-sm-2" data-clip="mui-icon-extra mui-icon-extra-card">
+				<span class="mui-icon-extra mui-icon-extra-card"></span>	
+				<div class="mui-media-body">mui-icon-extra-card</div>
+			</li>
+		
+			<li class="mui-table-view-cell mui-col-xs-3 mui-col-sm-2" data-clip="mui-icon-extra mui-icon-extra-grech">
+				<span class="mui-icon-extra mui-icon-extra-grech"></span>	
+				<div class="mui-media-body">mui-icon-extra-grech</div>
+			</li>
+		
+			<li class="mui-table-view-cell mui-col-xs-3 mui-col-sm-2" data-clip="mui-icon-extra mui-icon-extra-trend">
+				<span class="mui-icon-extra mui-icon-extra-trend"></span>	
+				<div class="mui-media-body">mui-icon-extra-trend</div>
+			</li>
+		
+			<li class="mui-table-view-cell mui-col-xs-3 mui-col-sm-2" data-clip="mui-icon-extra mui-icon-extra-cart">
+				<span class="mui-icon-extra mui-icon-extra-cart"></span>	
+				<div class="mui-media-body">mui-icon-extra-cart</div>
+			</li>
+		
+			<li class="mui-table-view-cell mui-col-xs-3 mui-col-sm-2" data-clip="mui-icon-extra mui-icon-extra-custom">
+				<span class="mui-icon-extra mui-icon-extra-custom"></span>	
+				<div class="mui-media-body">mui-icon-extra-custom</div>
+			</li>
+		
+			<li class="mui-table-view-cell mui-col-xs-3 mui-col-sm-2" data-clip="mui-icon-extra mui-icon-extra-express">
+				<span class="mui-icon-extra mui-icon-extra-express"></span>	
+				<div class="mui-media-body">mui-icon-extra-express</div>
+			</li>
+		
+			<li class="mui-table-view-cell mui-col-xs-3 mui-col-sm-2" data-clip="mui-icon-extra mui-icon-extra-class">
+				<span class="mui-icon-extra mui-icon-extra-class"></span>	
+				<div class="mui-media-body">mui-icon-extra-class</div>
+			</li>
+		
+			<li class="mui-table-view-cell mui-col-xs-3 mui-col-sm-2" data-clip="mui-icon-extra mui-icon-extra-gift">
+				<span class="mui-icon-extra mui-icon-extra-gift"></span>	
+				<div class="mui-media-body">mui-icon-extra-gift</div>
+			</li>
+		
+			<li class="mui-table-view-cell mui-col-xs-3 mui-col-sm-2" data-clip="mui-icon-extra mui-icon-extra-gold">
+				<span class="mui-icon-extra mui-icon-extra-gold"></span>	
+				<div class="mui-media-body">mui-icon-extra-gold</div>
+			</li>
+		
+			<li class="mui-table-view-cell mui-col-xs-3 mui-col-sm-2" data-clip="mui-icon-extra mui-icon-extra-heart">
+				<span class="mui-icon-extra mui-icon-extra-heart"></span>	
+				<div class="mui-media-body">mui-icon-extra-heart</div>
+			</li>
+		
+			<li class="mui-table-view-cell mui-col-xs-3 mui-col-sm-2" data-clip="mui-icon-extra mui-icon-extra-order">
+				<span class="mui-icon-extra mui-icon-extra-order"></span>	
+				<div class="mui-media-body">mui-icon-extra-order</div>
+			</li>
+		
+			<li class="mui-table-view-cell mui-col-xs-3 mui-col-sm-2" data-clip="mui-icon-extra mui-icon-extra-alipay">
+				<span class="mui-icon-extra mui-icon-extra-alipay"></span>	
+				<div class="mui-media-body">mui-icon-extra-alipay</div>
+			</li>
+		
+			<li class="mui-table-view-cell mui-col-xs-3 mui-col-sm-2" data-clip="mui-icon-extra mui-icon-extra-calendar">
+				<span class="mui-icon-extra mui-icon-extra-calendar"></span>	
+				<div class="mui-media-body">mui-icon-extra-calendar</div>
+			</li>
+		
+			<li class="mui-table-view-cell mui-col-xs-3 mui-col-sm-2" data-clip="mui-icon-extra mui-icon-extra-prech">
+				<span class="mui-icon-extra mui-icon-extra-prech"></span>	
+				<div class="mui-media-body">mui-icon-extra-prech</div>
+			</li>
+		
+			<li class="mui-table-view-cell mui-col-xs-3 mui-col-sm-2" data-clip="mui-icon-extra mui-icon-extra-heart-filled">
+				<span class="mui-icon-extra mui-icon-extra-heart-filled"></span>	
+				<div class="mui-media-body">mui-icon-extra-heart-filled</div>
+			</li>
+		
+			<li class="mui-table-view-cell mui-col-xs-3 mui-col-sm-2" data-clip="mui-icon-extra mui-icon-extra-rank">
+				<span class="mui-icon-extra mui-icon-extra-rank"></span>	
+				<div class="mui-media-body">mui-icon-extra-rank</div>
+			</li>
+		
+			<li class="mui-table-view-cell mui-col-xs-3 mui-col-sm-2" data-clip="mui-icon-extra mui-icon-extra-notice">
+				<span class="mui-icon-extra mui-icon-extra-notice"></span>	
+				<div class="mui-media-body">mui-icon-extra-notice</div>
+			</li>
+		
+			<li class="mui-table-view-cell mui-col-xs-3 mui-col-sm-2" data-clip="mui-icon-extra mui-icon-extra-share">
+				<span class="mui-icon-extra mui-icon-extra-share"></span>	
+				<div class="mui-media-body">mui-icon-extra-share</div>
+			</li>
+		
+			<li class="mui-table-view-cell mui-col-xs-3 mui-col-sm-2" data-clip="mui-icon-extra mui-icon-extra-regist">
+				<span class="mui-icon-extra mui-icon-extra-regist"></span>	
+				<div class="mui-media-body">mui-icon-extra-regist</div>
+			</li>
+		
+			<li class="mui-table-view-cell mui-col-xs-3 mui-col-sm-2" data-clip="mui-icon-extra mui-icon-extra-sweep">
+				<span class="mui-icon-extra mui-icon-extra-sweep"></span>	
+				<div class="mui-media-body">mui-icon-extra-sweep</div>
+			</li>
+		
+			<li class="mui-table-view-cell mui-col-xs-3 mui-col-sm-2" data-clip="mui-icon-extra mui-icon-extra-people">
+				<span class="mui-icon-extra mui-icon-extra-people"></span>	
+				<div class="mui-media-body">mui-icon-extra-people</div>
+			</li>
+		
+			<li class="mui-table-view-cell mui-col-xs-3 mui-col-sm-2" data-clip="mui-icon-extra mui-icon-extra-addpeople">
+				<span class="mui-icon-extra mui-icon-extra-addpeople"></span>	
+				<div class="mui-media-body">mui-icon-extra-addpeople</div>
+			</li>
+		
+			<li class="mui-table-view-cell mui-col-xs-3 mui-col-sm-2" data-clip="mui-icon-extra mui-icon-extra-peoples">
+				<span class="mui-icon-extra mui-icon-extra-peoples"></span>	
+				<div class="mui-media-body">mui-icon-extra-peoples</div>
+			</li>
+		
+			<li class="mui-table-view-cell mui-col-xs-3 mui-col-sm-2" data-clip="mui-icon-extra mui-icon-extra-like">
+				<span class="mui-icon-extra mui-icon-extra-like"></span>	
+				<div class="mui-media-body">mui-icon-extra-like</div>
+			</li>
+		
+			<li class="mui-table-view-cell mui-col-xs-3 mui-col-sm-2" data-clip="mui-icon-extra mui-icon-extra-filter">
+				<span class="mui-icon-extra mui-icon-extra-filter"></span>	
+				<div class="mui-media-body">mui-icon-extra-filter</div>
+			</li>
+		
+			<li class="mui-table-view-cell mui-col-xs-3 mui-col-sm-2" data-clip="mui-icon-extra mui-icon-extra-at">
+				<span class="mui-icon-extra mui-icon-extra-at"></span>	
+				<div class="mui-media-body">mui-icon-extra-at</div>
+			</li>
+		
+			<li class="mui-table-view-cell mui-col-xs-3 mui-col-sm-2" data-clip="mui-icon-extra mui-icon-extra-comment">
+				<span class="mui-icon-extra mui-icon-extra-comment"></span>	
+				<div class="mui-media-body">mui-icon-extra-comment</div>
+			</li>
+		
+			<li class="mui-table-view-cell mui-col-xs-3 mui-col-sm-2" data-clip="mui-icon-extra mui-icon-extra-computer">
+				<span class="mui-icon-extra mui-icon-extra-computer"></span>	
+				<div class="mui-media-body">mui-icon-extra-computer</div>
+			</li>
+		
+			<li class="mui-table-view-cell mui-col-xs-3 mui-col-sm-2" data-clip="mui-icon-extra mui-icon-extra-lamp">
+				<span class="mui-icon-extra mui-icon-extra-lamp"></span>	
+				<div class="mui-media-body">mui-icon-extra-lamp</div>
+			</li>
+		
+			<li class="mui-table-view-cell mui-col-xs-3 mui-col-sm-2" data-clip="mui-icon-extra mui-icon-extra-dictionary">
+				<span class="mui-icon-extra mui-icon-extra-dictionary"></span>	
+				<div class="mui-media-body">mui-icon-extra-dictionary</div>
+			</li>
+		
+			<li class="mui-table-view-cell mui-col-xs-3 mui-col-sm-2" data-clip="mui-icon-extra mui-icon-extra-xiaoshuo">
+				<span class="mui-icon-extra mui-icon-extra-xiaoshuo"></span>	
+				<div class="mui-media-body">mui-icon-extra-xiaoshuo</div>
+			</li>
+		
+			<li class="mui-table-view-cell mui-col-xs-3 mui-col-sm-2" data-clip="mui-icon-extra mui-icon-extra-topic">
+				<span class="mui-icon-extra mui-icon-extra-topic"></span>	
+				<div class="mui-media-body">mui-icon-extra-topic</div>
+			</li>
+		
+			<li class="mui-table-view-cell mui-col-xs-3 mui-col-sm-2" data-clip="mui-icon-extra mui-icon-extra-classroom">
+				<span class="mui-icon-extra mui-icon-extra-classroom"></span>	
+				<div class="mui-media-body">mui-icon-extra-classroom</div>
+			</li>
+		
+			<li class="mui-table-view-cell mui-col-xs-3 mui-col-sm-2" data-clip="mui-icon-extra mui-icon-extra-university">
+				<span class="mui-icon-extra mui-icon-extra-university"></span>	
+				<div class="mui-media-body">mui-icon-extra-university</div>
+			</li>
+		
+			<li class="mui-table-view-cell mui-col-xs-3 mui-col-sm-2" data-clip="mui-icon-extra mui-icon-extra-outline">
+				<span class="mui-icon-extra mui-icon-extra-outline"></span>	
+				<div class="mui-media-body">mui-icon-extra-outline</div>
+			</li>
+		
+			<li class="mui-table-view-cell mui-col-xs-3 mui-col-sm-2" data-clip="mui-icon-extra mui-icon-extra-find">
+				<span class="mui-icon-extra mui-icon-extra-find"></span>	
+				<div class="mui-media-body">mui-icon-extra-find</div>
+			</li>
+		
+			<li class="mui-table-view-cell mui-col-xs-3 mui-col-sm-2" data-clip="mui-icon-extra mui-icon-extra-arrowleftcricle">
+				<span class="mui-icon-extra mui-icon-extra-arrowleftcricle"></span>	
+				<div class="mui-media-body">mui-icon-extra-arrowleftcricle</div>
+			</li>
+		
+			<li class="mui-table-view-cell mui-col-xs-3 mui-col-sm-2" data-clip="mui-icon-extra mui-icon-extra-arrowrightcricle">
+				<span class="mui-icon-extra mui-icon-extra-arrowrightcricle"></span>	
+				<div class="mui-media-body">mui-icon-extra-arrowrightcricle</div>
+			</li>
+		
+			<li class="mui-table-view-cell mui-col-xs-3 mui-col-sm-2" data-clip="mui-icon-extra mui-icon-extra-top">
+				<span class="mui-icon-extra mui-icon-extra-top"></span>	
+				<div class="mui-media-body">mui-icon-extra-top</div>
+			</li>
+		
+			<li class="mui-table-view-cell mui-col-xs-3 mui-col-sm-2" data-clip="mui-icon-extra mui-icon-extra-phone">
+				<span class="mui-icon-extra mui-icon-extra-phone"></span>	
+				<div class="mui-media-body">mui-icon-extra-phone</div>
+			</li>
+		
+			<li class="mui-table-view-cell mui-col-xs-3 mui-col-sm-2" data-clip="mui-icon-extra mui-icon-extra-holiday">
+				<span class="mui-icon-extra mui-icon-extra-holiday"></span>	
+				<div class="mui-media-body">mui-icon-extra-holiday</div>
+			</li>
+		
+			<li class="mui-table-view-cell mui-col-xs-3 mui-col-sm-2" data-clip="mui-icon-extra mui-icon-extra-hotel">
+				<span class="mui-icon-extra mui-icon-extra-hotel"></span>	
+				<div class="mui-media-body">mui-icon-extra-hotel</div>
+			</li>
+		
+			<li class="mui-table-view-cell mui-col-xs-3 mui-col-sm-2" data-clip="mui-icon-extra mui-icon-extra-cold">
+				<span class="mui-icon-extra mui-icon-extra-cold"></span>	
+				<div class="mui-media-body">mui-icon-extra-cold</div>
+			</li>
+		
+			<li class="mui-table-view-cell mui-col-xs-3 mui-col-sm-2" data-clip="mui-icon-extra mui-icon-extra-cate">
+				<span class="mui-icon-extra mui-icon-extra-cate"></span>	
+				<div class="mui-media-body">mui-icon-extra-cate</div>
+			</li>
+		
+		</ul>
+	<!--</div>-->
+	</div>
+	<h3 class="component-description"><strong class="snippet_a">使用示例：</strong></h3><br />
+			<h4 class="component-description"><a href="javascript:void(0);" class="snippet_a">*</a>	在对应目录引入<code>css/mui-icon-extra</code><code>fonts/mui-icons-extra.ttf</code></h4><br />
+			<h4 class="component-description">使用时只需要在<code>span</code>节点上分别增加<code>.mui-icon-extra</code>、<code>.mui-icon-extra-name</code>两个类即可（name为图标名称，例如：calc、new等），如下代码即可显示一个计算器图标：</h4>
+<figure class="highlight"><pre><code class="language-html" data-lang="html">	<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;mui-icon-extra mui-icon-extra-calc&quot;</span><span class="nt">&gt;&lt;/span&gt;</span></code></pre></figure>
+		<!-- Footer -->
+			<div class="docs-footer">
+	<p class="docs-footer-text">mui遵循 <a href="javascript:if(confirm(%27https://github.com/dcloudio/mui/blob/master/LICENSE  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27https://github.com/dcloudio/mui/blob/master/LICENSE%27" tppabs="https://github.com/dcloudio/mui/blob/master/LICENSE">MIT License</a> 
+	</p>
+	<ul class="docs-footer-links">
+		<li>最新版本 v3.7.2</li>
+		<li>&middot;</li>
+		<li><a href="javascript:if(confirm(%27http://ask.dcloud.net.cn/explore/category-3  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://ask.dcloud.net.cn/explore/category-3%27" tppabs="http://ask.dcloud.net.cn/explore/category-3">问答社区</a></li>
+		<li>&middot;</li>
+		<li><a href="javascript:if(confirm(%27https://github.com/dcloudio/mui/issues  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27https://github.com/dcloudio/mui/issues%27" tppabs="https://github.com/dcloudio/mui/issues">Issues</a>
+		</li>
+		<li>&middot;</li>
+		<li><a href="javascript:if(confirm(%27https://github.com/dcloudio/mui/releases  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27https://github.com/dcloudio/mui/releases%27" tppabs="https://github.com/dcloudio/mui/releases">Releases</a>
+		</li>
+		<li>&middot;</li>
+	</ul>
+</div>
+<script src="../dist/js/jquery-2.1.1.js" tppabs="http://dev.dcloud.net.cn/mui/dist/js/jquery-2.1.1.js"></script>
+<script src="../dist/js/bootstrap.min.js" tppabs="http://dev.dcloud.net.cn/mui/dist/js/bootstrap.min.js"></script>
+<script src="../dist/js/mui.js-v=2016-08-07 19-43-10 -0700.js" tppabs="http://dev.dcloud.net.cn/mui/dist/js/mui.js?v=2016-08-07 19:43:10 -0700"></script>
+<script src="../assets/js/docs.js-v=2016-08-07 19-43-10 -0700.js" tppabs="http://dev.dcloud.net.cn/mui/assets/js/docs.js?v=2016-08-07 19:43:10 -0700"></script>
+<script src="../../../cdn.bootcss.com/clipboard.js/1.5.12/clipboard-1.js" tppabs="http://cdn.bootcss.com/clipboard.js/1.5.12/clipboard.js"></script>
+
+		</div>
+	</div>
+</div>
+<script>
+	var clip = new Clipboard('#iconlist>.mui-table-view-cell', {
+		text: function(trigger) {
+			return trigger.getAttribute('data-clip');
+		}
+	});
+	clip.on('success', function(e) {
+		e.clearSelection();
+		mui.toast('复制成功!');
+	});
+</script>
+  </body>
+</html>
